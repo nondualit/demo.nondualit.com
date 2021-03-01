@@ -1,660 +1,331 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>Page title</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <!-- Nucleo Icons -->
-    <link href="css/nucleo-icons.css" rel="stylesheet" />
-    <link href="css/nucleo-svg.css" rel="stylesheet" />
-    <!-- Font Awesome Icons -->
-    <link href="css/font-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/creativetim/creativetim.min.css">
-    <link rel="icon" sizes="16x16" href="favicon.ico">
-  </head>
-  <body>
-    <div class="wrapper">
-                
-      <header class="header-5">
-        <nav class="navbar navbar-expand-lg navbar-absolute">
-          <div class="container">
-            <div class="navbar-translate">
-              <a class="navbar-brand" href="javascript:;">Creative Tim</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#example-header-5" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            </div>
-            <div class="collapse navbar-collapse" id="example-header-6">
-              <div class="navbar-collapse-header">
-                <div class="row">
-                  <div class="col-6 collapse-brand"><a>Argon <span>PRO</span></a></div>
-                  <div class="col-6 collapse-close text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header-5" aria-controls="navbar-header-4" aria-expanded="false" aria-label="Toggle navigation"><span></span><span></span></button>
-                  </div>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Nondual IT</title>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="viewport" content="width=device-width" />
+
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="assets/css/landing-page.css" rel="stylesheet"/>
+
+        <!--     Fonts and icons     -->
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+        <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+    </head>
+    <body class="landing-page landing-page1">
+        <nav class="navbar navbar-transparent navbar-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                     <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                    </button>
+                    <a href="https://nondualit.com">
+                        <div class="logo-container">
+                            <div class="logo">
+                                <img src="assets/img/logos/wereld.png" alt="Nondual IT">
+                            </div>
+                            <div class="brand">
+                                <img src="assets/img/logos/letters.png" alt="Nondual IT">
+                            </div>
+                        </div>
+                    </a>
                 </div>
-              </div>
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link" href="javascript:;">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="javascript:;">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="javascript:;">Products</a></li>
-                <li class="nav-item"><a class="nav-link" href="javascript:;">Contact Us</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item"><a class="nav-link" href="https://twitter.com/CreativeTim"><i class="fab fa-twitter"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/CreativeTim"><i class="fab fa-facebook-square"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/CreativeTimOfficial"><i class="fab fa-instagram"></i></a></li>
-              </ul>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="example" >
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="https://github.com/nondualit/">
+                            <img src="assets/img/logos/githubklein.png"> Github
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/anibalojeda/">
+                            <img src="assets/img/logos/linkedinklein.png"> Linkedin
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-          </div>
         </nav>
-        <div class="page-header">
-          <div class="container">
-            <div class="row align-items-center text-left">
-              <div class="col-lg-5 col-12">
-                <h1 class="display-3">Design with us, <span class="text-primary">Develop Anything.</span></h1>
-                <p class="lead pb-4">We aim high at being focused on building relationships with our clients and community. Using our creative gifts drives this foundation.</p>
-                <div class="row row-input">
-                  <div class="col-sm-8 col-12">
-                    <input class="form-control" type="email" name="email" id="signupSrEmail" placeholder="Your email" aria-label="Your email">
-                  </div>
-                  <div class="col-sm-4 col-12 pl-lg-0">
-                    <button class="btn btn-primary btn-block" type="submit">More</button>
-                  </div>
+        <div class="wrapper">
+            <div class="parallax filter-gradient blue" data-color="blue">
+                <div class="parallax-background">
+                    <img class="parallax-background-image" src="assets/img/template/duinen_sol.jpg">
                 </div>
-              </div>
-              <div class="col-lg-7 col-12 pl-0"><img class="ml-lg-5" src="https://app.creative-tim.com/argon_placeholder/ill/bg6-2.svg" width="100%"></div>
-            </div>
-          </div>
-        </div>
-      </header>
-                
-      <div class="section features features-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 text-center mx-auto">
-              <h3 class="display-3">Company values</h3>
-              <p class="lead">There’s nothing I wanted to do in life that I wasn’t able to get good at. I’m not really specifically talented at anything except for the ability to learn.</p>
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-lg-12 mt-md-5">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="info">
-                    <div class="pr-md-5">
-                      <div class="icon icon-shape icon-shape-primary shadow rounded-circle mb-4"><i class="ni ni-atom"></i></div>
-                      <h5 class="display-5">Awesome features</h5>
-                      <p>The kit comes with three pre-built pages to help you get started faster.</p>
-                      <ul class="list-unstyled">
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <div class="mr-3"><i class="ni ni-check-bold"></i></div>
+                <div class= "container">
+                        <div class="col-md-6 col-md-offset-1">
+                            <div class="description">
+                                <br>
+                                <br>
+                                <h5><i>The only source of knowledge is experience.</i></h5>
+                                <br>
+                                <h5>Nondual IT specializes in designing, implementing, migrating and administering of IT environments. Our goal is to unburden our customers whom we see as our partners so they are free to focus on their core business.</h5>
                             </div>
-                            <div>
-                              <p class="mb-0">Beautiful elements</p>
+                            <div class="buttons">
+                                
+                                    <h5></h5><a href="https://www.linkedin.com/in/anibalojeda/" style="color:rgb(78, 238, 15)"></h5>
+                                    <img src="assets/img/logos/linkedingrande.png"> For business inquiries.
+                                    </a>
+                                
+                                </button>
                             </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <div class="mr-3"><i class="ni ni-check-bold"></i></div>
-                            </div>
-                            <div>
-                              <p class="mb-0">Amazing page examples</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <div class="mr-3"><i class="ni ni-check-bold"></i></div>
-                            </div>
-                            <div>
-                              <p class="mb-0">Super friendly support team</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="info">
-                    <div class="pr-md-5">
-                      <div class="icon icon-shape icon-shape-primary shadow rounded-circle mb-4"><i class="ni ni-money-coins"></i></div>
-                      <h5 class="display-5">Best prices</h5>
-                      <p>If you're taught you can’t do anything, you won’t do anything.</p>
-                      <ul class="list-unstyled">
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <div class="mr-3"><i class="ni ni-check-bold"></i></div>
-                            </div>
-                            <div>
-                              <p class="mb-0">Beautiful elements</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <div class="mr-3"><i class="ni ni-check-bold"></i></div>
-                            </div>
-                            <div>
-                              <p class="mb-0">Amazing page examples</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <div class="mr-3"><i class="ni ni-check-bold"></i></div>
-                            </div>
-                            <div>
-                              <p class="mb-0">Super friendly support team</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-5">
-                <div class="col-md-6">
-                  <div class="info">
-                    <div class="pr-md-5">
-                      <div class="icon icon-shape icon-shape-primary shadow rounded-circle mb-4"><i class="ni ni-support-16"></i></div>
-                      <h5 class="display-5">Community support</h5>
-                      <p>That’s the main thing people are always controlled by!</p>
-                      <ul class="list-unstyled">
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <div class="mr-3"><i class="ni ni-check-bold"></i></div>
-                            </div>
-                            <div>
-                              <p class="mb-0">Beautiful elements</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <div class="mr-3"><i class="ni ni-check-bold"></i></div>
-                            </div>
-                            <div>
-                              <p class="mb-0">Amazing page examples</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <div class="mr-3"><i class="ni ni-check-bold"></i></div>
-                            </div>
-                            <div>
-                              <p class="mb-0">Super friendly support team</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info">
-                    <div class="pr-md-5">
-                      <div class="icon icon-shape icon-shape-primary shadow rounded-circle mb-4"><i class="ni ni-laptop"></i></div>
-                      <h5 class="display-5">Responsive componenets</h5>
-                      <p>They're slowed down by their perception of themselves.</p>
-                      <ul class="list-unstyled">
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <div class="mr-3"><i class="ni ni-check-bold"></i></div>
-                            </div>
-                            <div>
-                              <p class="mb-0">Beautiful elements</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <div class="mr-3"><i class="ni ni-check-bold"></i></div>
-                            </div>
-                            <div>
-                              <p class="mb-0">Amazing page examples</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="d-flex align-items-center">
-                            <div>
-                              <div class="mr-3"><i class="ni ni-check-bold"></i></div>
-                            </div>
-                            <div>
-                              <p class="mb-0">Super friendly support team</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-                
-      <section class="section team-1"><div class="container">
-          <div class="row">
-            <div class="col-md-8 ml-auto mr-auto text-center">
-              <h3 class="display-3">Our Awesome Team 1</h3>
-              <p class="lead">People in this world shun people for being great. For being a bright color. For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in?</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="carousel slide carousel-team" id="carouselExampleControls">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="container">
+            <div class="section section-features">
+                <div class="container">
+                    <h4 class="header-text text-center">Expertise</h4>
                     <div class="row">
-                      <div class="col-md-5 p-5">
-                        <div class="p-4"><img class="rounded shadow transform-perspective-left" src="images/anibal.jpg" alt="First slide"></div>
-                      </div>
-                      <div class="col-md-7">
-                        <div class="wrapper p-md-0">
-                          <h3 class="card-title display-3">Anibal Ojeda</h3>
-                          <div class="lead">bla bla bla</div>
-                          <ul class="list-unstyled mb-0"><li class="py-1">
-                              <div class="d-flex align-items-center">
-                                <div>
-                                  <div class="badge badge-circle badge-info mr-3"><i class="ni ni-atom"></i></div>
+                        <div class="col-md-4">
+                            <div class="card card-blue">
+                                <div class="icon">
+                                    <img src="assets/img/clouddata.png" width="100" height="100">
                                 </div>
-                                <div>
-                                  <p class="mb-1">Dedicated entrepreneur</p>
+                                <div class="text">
+                                    <h4>Hosting and Cloud solutions</h4>
+                                    <p>We offer custom made hosting solutions based on your needs. Be it a dedicated server, a secure hosting platform/environment, or a flexible solution that scales with the changing needs of your organization. We would love the opportunity to show you what benefits Cloud computing can offer your company and advise on the best ways to help you achieve them.</p>
                                 </div>
-                              </div>
-                            </li>
-                            <li class="py-1">
-                              <div class="d-flex align-items-center">
-                                <div>
-                                  <div class="badge badge-circle badge-success mr-3"><i class="ni ni-user-run"></i></div>
-                                </div>
-                                <div>
-                                  <p class="mb-1">Urban exploration</p>
-                                </div>
-                              </div>
-                            </li>
-                          </ul><div class="footer text-left"><a class="btn btn-twitter btn-sm rounded-circle" href="javascript:;"><i class="fab fa-twitter"></i></a><a class="btn btn-facebook btn-sm rounded-circle" href="javascript:;"><i class="fab fa-facebook-square"></i></a><a class="btn btn-dribbble btn-sm rounded-circle" href="javascript:;"><i class="fab fa-dribbble"></i></a></div>
+                            </div>
                         </div>
-                      </div>
+                        <div class="col-md-4">
+                            <div class="card card-blue">
+                                <div class="icon">
+                                   <img src="assets/img/server1.jpg" width="100" height="100">
+                                </div>
+                                <h4>Linux and Legacy Systems</h4>
+                                <p>We specialize in managing business critical environments based on Linux. And we do not limit ourselves to only one variant but instead offer multiple platforms. We offer extensive knowledge of Legacy HP-UX,AIX,Tru64 but also FreeBSD and we are experts on Linux distributions like Red Hat, Ubuntu and Debian.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-blue">
+                                <div class="icon">
+                                    <i class="pe-7s-graph1"></i>
+                                </div>
+                                <h4>CI/CD and DevOPS</h4>
+                                <p>A CI/CD Pipeline implementation, or Continuous Integration/Continuous Deployment, is the backbone of the modern DevOps environment. It bridges the gap between development and operations teams by automating the building, testing, and deployment of applications. Ansible, Docker, Git, Kubernetes, Jenkins, Jira? all part of the Job.</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="container">
+            </div>
+            <div class="section section-features">
+                <div class="container">
                     <div class="row">
-                      <div class="col-md-5 p-5">
-                        <div class="p-4"><img class="rounded shadow transform-perspective-left" src="https://app.creative-tim.com/argon_placeholder/theme/lucy.jpg" alt="First slide"></div>
-                      </div>
-                      <div class="col-md-7">
-                        <div class="wrapper p-md-0">
-                          <h1 class="card-title">Quavo Austen</h1>
-                          <div class="lead">Artist is a term applied to a person who engages in an activity deemed to be an art. An artist also may be defined unofficially as "a person should is one who expresses him- or herself through a medium". He is should a descriptive term applied to a person who engages in an activity deemed to be an art."</div>
-                          <ul class="list-unstyled mb-0"><li class="py-1">
-                              <div class="d-flex align-items-center">
-                                <div>
-                                  <div class="badge badge-circle badge-info mr-3"><i class="ni ni-atom"></i></div>
+                        <div class="col-md-4">
+                            <div class="card card-blue">
+                                <div class="icon">
+                                    <img src="assets/img/world.jpg" width="100" height="100">
                                 </div>
-                                <div>
-                                  <p class="mb-1">Dedicated entrepreneur</p>
+                                <div class="text">
+                                    <h4>Remote administration</h4>
+                                    <p>Having and maintaining an overview of your IT infrastructure is continually becoming more complex. This is a task for which Nondual IT is ideally equipped. We will gladly take over this task in order to enable you to focus on your core business.</p>
                                 </div>
-                              </div>
-                            </li>
-                            <li class="py-1">
-                              <div class="d-flex align-items-center">
-                                <div>
-                                  <div class="badge badge-circle badge-success mr-3"><i class="ni ni-user-run"></i></div>
-                                </div>
-                                <div>
-                                  <p class="mb-1">Urban exploration</p>
-                                </div>
-                              </div>
-                            </li>
-                          </ul><div class="footer text-left"><a class="btn btn-twitter btn-sm rounded-circle" href="javascript:;"><i class="fab fa-twitter"></i></a><a class="btn btn-facebook btn-sm rounded-circle" href="javascript:;"><i class="fab fa-facebook-square"></i></a><a class="btn btn-dribbble btn-sm rounded-circle" href="javascript:;"><i class="fab fa-dribbble"></i></a></div>
+                            </div>
                         </div>
-                      </div>
+                        <div class="col-md-4">
+                            <div class="card card-blue">
+                                <div class="icon">
+                                    <img src="assets/img/migration.png" width="100" height="100">
+                                </div>
+                                <h4>Implementation en migration</h4>
+                                <p>The IT world is ever changing and new developments can cause your current IT environment to become outdated. Nondual IT can assist with installing, configuring and the renewal of your IT environment. We can also fulfil an advisory role if needed.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-blue">
+                                <div class="icon">
+                                    <i class="pe-7s-note2"></i>
+                                </div>
+                                <h4>Consultancy</h4>
+                                <p>Nondual IT can help you reach an oversight and can support you in order to make the right decisions. We are critical and offer clear and concise advice, tailored to your budget and company goals.</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="container">
+            </div>
+           <div class="section section-gray section-clients">
+                <div class="container text-center">
+                    <h4 class="header-text">Happy Clients</h4>
+                    <p>
+                        Get closer than ever to your customers. So close that you tell them what they need well before they realize it themselves.<br>
+                    </p>
+                    <div class="logos">
+                        <ul class="list-unstyled">
+                            <li ><img src="assets/img/logos/ing.png"/></li>
+                            <li ><img src="assets/img/logos/ns.png"/></li>
+                            <li ><img src="assets/img/logos/rabo.png"/></i>
+                            <li ><img src="assets/img/logos/gemeenteutrecht.png"/></li>
+                            <li ><img src="assets/img/logos/prorail.png"/></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-demo">
+                <div class="container">
                     <div class="row">
-                      <div class="col-md-5 p-5">
-                        <div class="p-4"><img class="rounded shadow transform-perspective-left" src="https://app.creative-tim.com/argon_placeholder/theme/willy-dade.jpg" alt="First slide"></div>
-                      </div>
-                      <div class="col-md-7">
-                        <div class="wrapper p-md-0">
-                          <h1 class="card-titleLucy">Thomson</h1>
-                          <div class="lead">Artist is a term applied to a person who engages in an activity deemed to be an art. An artist also may be defined unofficially as "a person should is one who expresses him- or herself through a medium". He is should a descriptive term applied to a person who engages in an activity deemed to be an art."</div>
-                          <ul class="list-unstyled mb-0"><li class="py-1">
-                              <div class="d-flex align-items-center">
-                                <div>
-                                  <div class="badge badge-circle badge-info mr-3"><i class="ni ni-atom"></i></div>
+                        <div class="col-md-6">
+                            <div id="description-carousel" class="carousel fade" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="assets/img/anibal.jpg" alt="">
+                                    </div>   
                                 </div>
-                                <div>
-                                  <p class="mb-1">Dedicated entrepreneur</p>
+                            </div>
+                            <img src="assets/img/logos/redhat.png" width="250" height="100" alt="RedHat">
+                            <img src="assets/img/logos/aws.png" width="150" height="150" alt="AWS">
+                        </div>
+                        <div class="col-md-5 col-md-offset-1">
+                            <h4 class="header-text">About the founder</h4>
+                            <p><i>I love to automate everything…</i></p>
+                            <p>Anibal Enrique Gonzalez Ojeda is a Linux RHCE certified engineer with over two decades of experience. He is a truly DevOps engineer and the owner of and driving force behind Nondual IT
+                                He specializes in heterogeneous environments, Cloud infrastructure, websites and databases, as well as in managed services and continuous delivery environments.</p>
+                                
+                                <p>Anibal has extensive knowledge and experience with various operating systems, applications, hardware platforms and the implementation of different complex projects in The Netherlands. 
+                                He also has wide experience of banking and financial services industry including payment systems.
+                                In addition to these qualities, Anibal gained practical knowledge and experience as a technical manager and ITIL coordinator.<p>
+                                
+                                <p>His analytical ability allows him to translate abstract 
+                                concepts into practical solutions.</p>
+                                
+                                <p>He is a driven specialist with a high commitment always ready for new challenges.
+                                Do you have such a challenge in your organization? Don’t hesitate to contact Nondual IT.<p>                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-testimonial">
+                <div class="container">
+                    <h4 class="header-text text-center">What people think</h4>
+                    <div id="carousel-example-generic" class="carousel fade" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item">
+                                <div class="mask">
+                                    <img src="assets/img/faces/face-4.jpg">
                                 </div>
-                              </div>
+                                <div class="carousel-testimonial-caption">
+                                    <p>Stefan Schagen - Delivery Manager Payments OPF | Rabobank IT Systems</p>
+                                    <h4>"Anibal is een goede aanwinst voor het team. Sterke focus op techniek en bewonderenswaardige drive voor Automation. Grijpt alle kansen aan hier invulling aan te geven met dynatrace en overige tools. Voorlopig ben je nog onder de pannen bij ons!"</h4>
+                                </div>
+                            </div>
+                            <div class="item active">
+                                <div class="mask">
+                                    <img src="assets/img/faces/face-3.jpg">
+                                </div>
+                                <div class="carousel-testimonial-caption">
+                                    <p>Ivo Breeden - Technical Application Engineer bij Rabobank ICT</p>
+                                    <h4>"Anibal is een energieke medewerker. Hij heeft diepgaande technische kennis van computer systemen. Hij is een doordouwer: als er iets moet gebeuren dan zal Anibal zorgen dat het op tijd klaar is."</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="mask">
+                                    <img src="assets/img/faces/face-2.jpg">
+                                </div>
+                                <div class="carousel-testimonial-caption">
+                                    <p>Nuriel Shem-Tov - Former Linux Engineer NXS</p>
+                                    <h4>"I have worked closely with him as he was my direct supervisor and have found him to be extremely knowledgeable and competent. It was a pleasure to work with him. Demonstrating an incredible initiative and a strong dedication, I recommend him!"</h4>
+                                </div>
+                            </div>   
+                            <div class="item">
+                                <div class="mask">
+                                    <img src="assets/img/faces/face-2.jpg">
+                                </div>
+                                <div class="carousel-testimonial-caption">
+                                    <p>Peter Vader - Former Teamlead Unix/Linux Ten ICT</p>
+                                    <h4>"Anibal brings lot of knowledge with him. During his time at TenICT he was a very respected colleague. On the Linux and Unix platforms he knows his way and he is capable of sharing his knowledge. I can recommend him to everyone!"</h4>
+                                </div>
+                            </div>   
+                            <div class="item">
+                                <div class="mask">
+                                    <img src="assets/img/faces/face-2.jpg">
+                                </div>
+                                <div class="carousel-testimonial-caption">
+                                    <p>Dennis N. van der Mijden - Former Teamlead KBC Clearing N.V.</p>
+                                    <h4>"Even though we only hired Anibal for a week, he still managed to impress us with his skills. Not only did he finish the job on time, he also delivered a well documented and fully working critical systems."</h4>
+                                </div>
+                            </div>   
+                            <div class="item">
+                                <div class="mask">
+                                    <img src="assets/img/faces/face-2.jpg">
+                                </div>
+                                <div class="carousel-testimonial-caption">
+                                    <p>Ad Marjenburgh - Former Teamlead Linux/Unix Ultimum</p>
+                                    <h4>"Anibal is a professional Unix/Linux engineer. A fine person to work with. Not afraid to tell his opinion for a good idea for good implementation. Getting the job done in every way he can."</h4>
+                                </div>
+                            </div>   
+                            <div class="item">
+                                <div class="mask">
+                                    <img src="assets/img/faces/face-2.jpg">
+                                </div>
+                                <div class="carousel-testimonial-caption">
+                                    <p>Jos Tijssen - Teamlead Unix IBM/ABN AMRO</p>
+                                    <h4>"It was a pleasure to have Anibal in my team as a IT Specialist. During this period at the IBM Midrange UNIX department Anibal contributed very positively with his UNIX IT knowledge. Thanks for your contribution"</h4>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators carousel-indicators-blue">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-no-padding">
+                <div class="parallax filter-gradient blue" data-color="blue">
+                    <div class="parallax-background">
+                        <img class ="parallax-background-image" src="assets/img/template/duinen2.jpg"/>
+                    </div>
+                    <div class="info">
+                        <a href="https://1drv.ms/w/s!AjbrWs6ZHiMah7heUDChr0uOXfQpTw?e=RjSFTU" class="btn btn-neutral btn-lg btn-fill">Engish Resume</a>
+                        <a href="https://1drv.ms/w/s!AjbrWs6ZHiMah7hfkAkOOsSA-2omNA" class="btn btn-neutral btn-lg btn-fill">Dutch Resume</a>
+                        <h3>Download my resume</h3>
+                        <h5>For more info about my career.</h5>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                Home
+                                </a>
                             </li>
-                            <li class="py-1">
-                              <div class="d-flex align-items-center">
-                                <div>
-                                  <div class="badge badge-circle badge-success mr-3"><i class="ni ni-user-run"></i></div>
-                                </div>
-                                <div>
-                                  <p class="mb-1">Urban exploration</p>
-                                </div>
-                              </div>
-                            </li>
-                          </ul><div class="footer text-left"><a class="btn btn-twitter btn-sm rounded-circle" href="javascript:;"><i class="fab fa-twitter"></i></a><a class="btn btn-facebook btn-sm rounded-circle" href="javascript:;"><i class="fab fa-facebook-square"></i></a><a class="btn btn-dribbble btn-sm rounded-circle" href="javascript:;"><i class="fab fa-dribbble"></i></a></div>
-                        </div>
-                      </div>
+                        </ul>
+                    </nav>
+                    <div class="social-area pull-right">
+                        <a href="https://github.com/nondualit/"><img src="assets/img/logos/githubklein.png">
+                        </a>
+                        <a href="https://www.linkedin.com/in/anibalojeda/"><img src="assets/img/logos/linkedinklein.png">
+                        </a>
                     </div>
-                  </div>
+                    <div class="copyright">
+                        &copy; 2021 <a href="https://nondualit.com">Nondualit IT </a>/ KVK 56812337 / BTW. NL002391224B59
+                    </div>
                 </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><i class="ni ni-bold-left"></i><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><i class="ni ni-bold-right"></i><span class="sr-only">Next</span></a>
-            </div>
-          </div>
+            </footer>
         </div>
-      </section>
-                
-      <section class="section project-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto text-center my-5">
-              <h3 class="display-3">Some of Our Awesome Products</h3>
-              <p class="lead">The time is now for it to be okay to be great. People in this world shun people for being great.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="card card-project">
-                <a href="javascript:;">
-                  <div class="icon icon-lg icon-shape icon-shape-primary shadow rounded-circle mx-auto"><i class="ni ni-favourite-28"></i></div>
-                </a>
-                <div class="card-body">
-                  <h4 class="card-title mt-3">Slack bot</h4>
-                  <p class="card-description">If everything I did failed - which it doesn't, it actually succeeds - just the fact that I'm willing to fail is an inspiration. People are so scared to lose that they don't even try.</p>
-                  <div class="card-footer">
-                    <button class="btn btn-link text-primary" type="button"><i class="ni ni-glasses-2 mr-2"></i><span>Check more</span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="card card-project">
-                <a href="javascript:;">
-                  <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mx-auto"><i class="ni ni-books"></i></div>
-                </a>
-                <div class="card-body">
-                  <h4 class="card-title mt-3">Looking great</h4>
-                  <p class="card-description">You have the opportunity to play this game of life you need to appreciate every moment. A lot of people don’t appreciate the moment until it’s motivating the doers.</p>
-                  <div class="card-footer">
-                    <button class="btn btn-link text-success" type="button"><i class="ni ni-key-25 mr-2"></i><span>Find a opportunity</span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="card card-project">
-                <a href="javascript:;">
-                  <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mx-auto"><i class="ni ni-trophy"></i></div>
-                </a>
-                <div class="card-body">
-                  <h4 class="card-title mt-3">Developer First</h4>
-                  <p class="card-description">For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one who believed it?</p>
-                  <div class="card-footer">
-                    <button class="btn btn-link text-warning" type="button"><i class="ni ni-notification-70 mr-2"></i><span>Check more</span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="card card-project">
-                <a href="javascript:;">
-                  <div class="icon icon-lg icon-shape icon-shape-secondary shadow rounded-circle mx-auto"><i class="ni ni-favourite-28"></i></div>
-                </a>
-                <div class="card-body">
-                  <h4 class="card-title mt-3">Prepare launch</h4>
-                  <p class="card-description">Society has put up so many boundaries, so many limitations on what’s right and wrong that it’s almost impossible to get a pure thought out. It’s like a little kid, a little boy.</p>
-                  <div class="card-footer">
-                    <button class="btn btn-link text-secondary" type="button"><i class="ni ni-glasses-2 mr-2"></i><span>Check out now</span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="card card-project">
-                <a href="javascript:;">
-                  <div class="icon icon-lg icon-shape icon-shape-danger shadow rounded-circle mx-auto"><i class="ni ni-books"></i></div>
-                </a>
-                <div class="card-body">
-                  <h4 class="card-title mt-3">Premium support</h4>
-                  <p class="card-description">Pink is obviously a better color. Everyone’s born confident, and everything’s taken away from you matters is the people who are sparked by it follow their dreams, too.</p>
-                  <div class="card-footer">
-                    <button class="btn btn-link text-danger" type="button"><i class="ni ni-key-25 mr-2"></i><span>Find a opportunity</span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="card card-project">
-                <a href="javascript:;">
-                  <div class="icon icon-lg icon-shape icon-shape-info shadow rounded-circle mx-auto"><i class="ni ni-trophy"></i></div>
-                </a>
-                <div class="card-body">
-                  <h4 class="card-title mt-3">Design tools</h4>
-                  <p class="card-description">Constantly growing. We’re constantly making mistakes. We’re constantly trying to express ourselves and actualize our dreams the position that we want to be.</p>
-                  <div class="card-footer">
-                    <button class="btn btn-link text-info" type="button"><i class="ni ni-notification-70 mr-2"></i><span>Check more</span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-                
-      <section class="section contactus-1 bg-default" style="background-image: url('https://app.creative-tim.com/argon_placeholder/ill/1.svg')">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-5 col-md-5 d-flex justify-content-center flex-column">
-              <h2 class="title text-white">Get in Touch</h2>
-              <h4 class="description text-white">You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</h4>
-              <div class="info info-horizontal">
-                <div class="icon icon-shape icon-shape-primary shadow rounded-circle text-white"><i class="ni ni-square-pin"></i></div>
-                <div class="description">
-                  <h4 class="info-title text-white">Find us at the office</h4>
-                  <p class="description ml-3 text-white">
-                    Bld Mihail Kogalniceanu, nr. 8,
-                    <br>
-                    7652 Bucharest,
-                    <br>
-                    Romania
-                  </p>
-                </div>
-              </div>
-              <div class="info info-horizontal">
-                <div class="icon icon-shape icon-shape-primary shadow rounded-circle text-white"><i class="ni ni-mobile-button"></i></div>
-                <div class="description">
-                  <h4 class="info-title text-white">Give us a ring</h4>
-                  <p class="description ml-3 text-white">
-                    Michael Jordan
-                    <br>
-                    +40 762 321 762
-                    <br>
-                    Mon - Fri, 8:00-22:00
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-7 ml-auto mr-auto">
-              <div class="card card-contact card-raised">
-                <form role="form" id="contact-form-1" method="post">
-                  <div class="card-header text-center">
-                    <h4 class="card-title">Contact Us</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>First name</label>
-                          <div class="input-group mb-4">
-                            <div class="input-group-prepend"><span class="input-group-text"><i class="ni ni-circle-08"></i></span></div>
-                            <input class="form-control" placeholder="First Name..." aria-label="First Name..." type="text">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 pl-2">
-                        <div class="form-group">
-                          <label>Last name</label>
-                          <div class="input-group">
-                            <div class="input-group-prepend"><span class="input-group-text"><i class="ni ni-collection"></i></span></div>
-                            <input class="form-control" type="text" placeholder="Last Name..." aria-label="Last Name...">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label>Email address</label>
-                      <div class="input-group">
-                        <div class="input-group-prepend"><span class="input-group-text"><i class="ni ni-email-83"></i></span></div>
-                        <input class="form-control" type="text" placeholder="Email Here...">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label>Your message</label>
-                      <textarea class="form-control" name="message" id="message" rows="6"></textarea>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="custom-control custom-checkbox mt-2">
-                          <input class="custom-control-input" id="customCheck" type="checkbox">
-                          <label class="custom-control-label" for="customCheck"><span>I'm not a robot</span></label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <button class="btn btn-primary pull-right" type="submit">Send Message</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-                
-      <footer class="footer">
-        <div class="container">
-          <div class="row row-grid align-items-right">
-            <div class="col-md-6">
-              <h3 class="text-primary font-weight-light mb-2">Thank you for supporting us!</h3>
-              <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
-            </div>
-            <div class="col-md-6 text-lg-center btn-wrapper">
-              <button class="btn btn-icon-only btn-twitter rounded-circle" target="_blank" href="javascript:;" rel="nofollow" data-toggle="tooltip" data-original-title="Follow us"><span class="btn-inner--icon"><i class="fa fa-twitter"></i></span></button>
-              <button class="btn btn-icon-only btn-facebook rounded-circle" target="_blank" href="javascript:;" rel="nofollow" data-toggle="tooltip" data-original-title="Like us"><span class="btn-inner--icon"><i class="fab fa-facebook"></i></span></button>
-              <button class="btn btn-icon-only btn-dribbble rounded-circle" target="_blank" href="javascript:;" rel="nofollow" data-toggle="tooltip" data-original-title="Follow us"><span class="btn-inner--icon"><i class="fa fa-dribbble"></i></span></button>
-              <button class="btn btn-icon-only btn-github rounded-circle" target="_blank" href="javascript:;" rel="nofollow" data-toggle="tooltip" data-original-title="Star on Github"><span class="btn-inner--icon"><i class="fa fa-github"></i></span></button>
-            </div>
-          </div>
-          <hr>
-          <div class="row align-items-center justify-content-md-between">
-            <div class="col-md-6">
-              <div class="copyright"><span>© 2020</span><a class="ml-1" href="javascript:;">Creative Tim</a></div>
-            </div>
-            <div class="col-md-6">
-              <ul class="nav nav-footer justify-content-end">
-                <li class="nav-item"><a class="nav-link" href="javascript:;" target="_blank">Creative Tim</a></li>
-                <li class="nav-item"><a class="nav-link" href="javascript:;" target="_blank">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="javascript:;" target="_blank">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="javascript:;" target="_blank">License</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
 
-    <!--   Core JS Files   -->
-    <script src="js/core/jquery.min.js" type="text/javascript"></script>
-    <script src="js/core/popper.min.js" type="text/javascript"></script>
-    <script src="js/core/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/plugins/perfect-scrollbar.jquery.min.js"></script>
-    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-    <script src="js/plugins/bootstrap-switch.js"></script>
-    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-    <script src="js/plugins/nouislider.min.js" type="text/javascript"></script>
-    <!--  Plugin for the Carousel, full documentation here: http://jedrzejchalubek.com/ -->
-    <script src="js/plugins/glide.js" type="text/javascript"></script>
-    <!--  Plugin for the DatePicker, full documentation here: https://flatpickr.js.org/ -->
-    <script src="js/plugins/moment.min.js"></script>
-    <!--	Plugin for Select, full documentation here: https://joshuajohnson.co.uk/Choices/ -->
-    <script src="js/plugins/choices.min.js" type="text/javascript"></script>
-    <!--  Plugin for the DateTimePicker, full documentation here: https://flatpickr.js.org/ -->
-    <script src="js/plugins/datetimepicker.js" type="text/javascript"></script>
-    <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
-    <script src="js/plugins/jasny-bootstrap.min.js"></script>
-    <!-- Plugin for Headrom, full documentation here: https://wicky.nillia.ms/headroom.js/ -->
-    <script src="js/plugins/headroom.min.js"></script>
-    <!-- Control Center for Argon UI Kit: parallax effects, scripts for the example pages etc -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE" type="text/javascript"></script>
-    <script src="js/argon-design-system.min.js?v=1.0.2" type="text/javascript"></script>
-    <script>
-    function argonScripts() {
-        if (document.querySelectorAll('.glide').length) {
-            // Carousel
-            new Glide('.glide', {
-                type: 'carousel',
-                startAt: 0,
-                focusAt: 2,
-                perTouch: 1,
-                perView: 4
-            }).mount();
-        }
-
-        if (document.querySelectorAll('.testimonial-glide').length) {
-            // Testimonial Carousel
-            new Glide('.testimonial-glide', {
-                type: 'carousel',
-                startAt: 0,
-                focusAt: 2,
-                perTouch: 1,
-                perView: 4
-            }).mount();
-        }
-
-        if (document.querySelectorAll('.map').length) {
-            ArgonKit.initGoogleMaps();
-            ArgonKit.initGoogleMaps2();
-        }
-    }
-    argonScripts();
-    </script>
-  </body>
+    </body>
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.js" type="text/javascript"></script>
+    <script src="assets/js/awesome-landing-page.js" type="text/javascript"></script>
 </html>
-
