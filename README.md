@@ -7,14 +7,15 @@ This website is based on a free Creative Tim template https://www.creative-tim.c
 
 You can use this repo for your own and change it and make it yours.
 
-Use it in Kubernetes 
+Use it in Kubernetes with nginx
 
-helm install nondualit-app --set cloneHtdocsFromGit.enabled=true --set cloneHtdocsFromGit.repository=https://github.com/nondualit/nondualit.com.git  --set cloneHtdocsFromGit.branch=master bitnami/apach
+helm repo add bitnami https://charts.bitnami.com/bitnami
 
-More info about Bitmani and helm
+helm install nondualit-nginx --set cloneStaticSiteFromGit.enabled=true --set cloneStaticSiteFromGit.repository=https://github.com/nondualit/nondualit.com.git --set cloneStaticSiteFromGit.branch=master bitnami/nginx
 
-https://docs.bitnami.com/kubernetes/infrastructure/apache/get-started/deploy-custom-application/
+More info
 
-https://hub.kubeapps.com/charts/bitnami/apache/8.0.1
+https://github.com/bitnami/charts/tree/master/bitnami/nginx/#installing-the-chart
+
 
 All pictures made by Anibal Ojeda can be used under the GNU General Public License (GPL) 3.0
