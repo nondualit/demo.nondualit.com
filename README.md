@@ -16,7 +16,7 @@ Feel free to replace my website with your own code if you prefer.
 Hace fun and use it if you want!
 k8s rulez
 
-#Run this manifest for example on DigitalOcean k8s
+# Run this manifest for example on DigitalOcean k8s
 
 <pre>
 apiVersion: apps/v1
@@ -126,5 +126,8 @@ spec:
           class: nginx
  </pre>
 
-#To get your ingress IP (after manifest)
+# To get your ingress IP (after manifest)
 <pre>kubectl get ingress nginx-ingress</pre>
+
+# Image on DockerHub if you feel experimenting more
+https://hub.docker.com/r/nondualit/nondualit.com
