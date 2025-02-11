@@ -16,11 +16,7 @@ Feel free to replace my website with your own code if you prefer.
 Hace fun and use it if you want!
 k8s rulez
 
-
-#Run this manifest for example on DigitalOcean k8s 
-
-#To get your ingress IP (after manifest)
-<pre>kubectl get ingress nginx-ingress</pre>
+#Run this manifest for example on DigitalOcean k8s
 
 <pre>
 apiVersion: apps/v1
@@ -129,3 +125,6 @@ spec:
         ingress:
           class: nginx
  </pre>
+
+#To get your ingress IP (after manifest)
+<pre>kubectl get ingress nginx-ingress</pre>
