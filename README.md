@@ -1,11 +1,25 @@
-# nondualit.com template
-use it if you want!
+# Purpose of This Repository
+The purpose of this repository is to learn Kubernetes (K8s). This manifest shares the source code for my website, nondualit.com, so you can experiment with setting it up on your own Kubernetes cluster. For example, you can use DigitalOcean or TransIP K8s Stack, which are among the most affordable options available online.
 
-# k8s rulez
+What You’ll Need:
+- An account with DigitalOcean or TransIP K8s Stack
+- A valid domain
+- A working email address
+- At least $24/month for a 2-node cluster
 
-Run this manifest for example on DigitalOcean k8s 
+To-Do:
+- Add the token as a secret
+- Make the repository private
 
-To get your ingress IP (after manifest)
+Feel free to replace my website with your own code if you prefer.
+
+Hace fun and use it if you want!
+k8s rulez
+
+
+#Run this manifest for example on DigitalOcean k8s 
+
+#To get your ingress IP (after manifest)
 <pre>kubectl get ingress nginx-ingress</pre>
 
 <pre>
