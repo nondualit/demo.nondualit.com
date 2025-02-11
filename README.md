@@ -5,6 +5,9 @@ use it if you want!
 
 Run this manifest for example on DigitalOcean k8s 
 
+To get your ingress IP (after manifest)
+<pre>```kubectl get ingress nginx-ingress```</pre>
+
 <pre> ```
 apiVersion: apps/v1
 kind: Deployment
