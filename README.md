@@ -3,7 +3,7 @@ use it if you want!
 
 # k8s rulez
 
-Run ithis manifest for example on DigitalOcean k8s 
+Run this manifest for example on DigitalOcean k8s 
 
 <pre> ```
 apiVersion: apps/v1
