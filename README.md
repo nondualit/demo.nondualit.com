@@ -84,7 +84,7 @@ spec:
   tls:
   - hosts:
     - YOURDOMAIN
-    secretName: zenproject-tls
+    secretName: DOMAIN-tls
   rules:
   - host: YOURDOMAIN
     http:
