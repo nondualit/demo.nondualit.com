@@ -7,7 +7,7 @@ What You’ll Need:
 - A working email address
 - At least $24/month for a 2-node cluster
 
-To-Do:
+Optional:
 - Add the token as a secret
 - Make the repository private
 
