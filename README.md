@@ -16,7 +16,7 @@ Feel free to replace my website with your own code if you prefer.
 Hace fun and use it if you want!
 k8s rulez
 
-# Run this manifest for example on DigitalOcean k8s
+## Run this manifest for example on DigitalOcean k8s
 
 <pre>
 apiVersion: apps/v1
@@ -126,8 +126,91 @@ spec:
           class: nginx
  </pre>
 
-# To get your ingress IP (after manifest)
+## To get your ingress IP (after manifest)
 <pre>kubectl get ingress nginx-ingress</pre>
 
-# Image on DockerHub if you feel experimenting more
+## Image on DockerHub if you feel experimenting more
 https://hub.docker.com/r/nondualit/nondualit.com
+
+## Use tokens
+ <pre>
+ kubectl create secret generic github-credentials \
+  --from-literal=GITHUB_USERNAME=USER \
+  --from-literal=GITHUB_TOKEN=KEY 
+ </pre>
+
+  <pre>
+ apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      volumes:
+        - name: site-content
+          emptyDir: {}
+      initContainers:
+        - name: git-clone-repository
+          image: bitnami/git:latest
+          env:
+            - name: GITHUB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: github-credentials
+                  key: GITHUB_USERNAME
+            - name: GITHUB_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: github-credentials
+                  key: GITHUB_TOKEN
+          command:
+            - /bin/bash
+            - '-ec'
+            - >
+              [[ -f "/opt/bitnami/scripts/git/entrypoint.sh" ]] && source "/opt/bitnami/scripts/git/entrypoint.sh";
+              git clone https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/REPO.git --branch main /app
+          volumeMounts:
+            - name: site-content
+              mountPath: /app
+      containers:
+        - name: git-repo-syncer
+          image: bitnami/git:latest
+          env:
+            - name: GITHUB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: github-credentials
+                  key: GITHUB_USERNAME
+            - name: GITHUB_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: github-credentials
+                  key: GITHUB_TOKEN
+          command:
+            - /bin/bash
+            - '-ec'
+            - >
+              [[ -f "/opt/bitnami/scripts/git/entrypoint.sh" ]] && source "/opt/bitnami/scripts/git/entrypoint.sh";
+              while true; do
+                  cd /app && git pull https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/REPO.git main;
+                  sleep 60;
+              done
+          volumeMounts:
+            - name: site-content
+              mountPath: /app
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: site-content
+              mountPath: /usr/share/nginx/html
+ </pre>
