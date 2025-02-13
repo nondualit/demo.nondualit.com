@@ -1,3 +1,5 @@
+# Nondual IT demo site
+
 The purpose of this repository is to learn Kubernetes (K8s). This manifest shares the source A source code for my website, nondualit.com, so you can experiment with setting it up on your own Kubernetes cluster. For example, you can use DigitalOcean or TransIP K8s Stack, which are among the most affordable options available online.
 
 What You’ll Need:
